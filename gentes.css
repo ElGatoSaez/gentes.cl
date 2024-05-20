@@ -1,3 +1,100 @@
 body {
-    background-image: url("cabaña.png");
+    background-image: url("assets/cabaña.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footer-disclosement, .first, .second {
+    font-family: "Bodoni Moda", serif;
+}
+
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('assets/fonts/futura75bold.TTF');
+}
+
+@font-face {
+    font-family: 'Futura Medium';
+    src: url('assets/fonts/futura65medium.TTF');
+}
+
+.first {
+    color: #000000;
+    margin-bottom: -48px;
+}
+
+.second {
+    margin-top: 0px;
+    margin-left: 5px;
+    mix-blend-mode: overlay;
+}
+
+.sobre {
+    position: absolute; 
+}
+
+#manuscrito1 {
+    top: 304px; 
+    left: 424px; 
+    width: 20%;
+    mix-blend-mode: overlay; 
+}
+
+#manuscrito2 {
+    top: 304px; 
+    left: 410px; 
+    width: 20%;
+}
+
+#manuscrito3 {
+    top: 150px; 
+    left: 420px; 
+    width: 41%;
+    mix-blend-mode: overlay;
+}
+
+#manuscrito4 {
+    top: 150px; 
+    left: 410px; 
+    width: 41%;
+    mix-blend-mode: overlay;
+}
+
+.titulo-caja {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+#titulo {
+    font-family: 'Futura Bold', sans-serif;
+    font-size: 30pt;
+    color: black;
+    margin: 0;
+    padding-bottom: 50px;
+    white-space: nowrap;
+}
+#subtitulo {
+    font-family: 'Futura Medium', sans-serif;
+    font-size: 30pt;
+    color: black;
+    margin: 0;
+    padding-top: 40px;
+    min-width: 350px;
+    line-height: 28pt;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 7pt;
 }
