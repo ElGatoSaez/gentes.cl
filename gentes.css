@@ -1,5 +1,7 @@
 body {
     background-image: url("assets/cabaña.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -97,4 +99,72 @@ footer {
     position: fixed;
     bottom: 0;
     font-size: 7pt;
+}
+
+/* Media query for vertical phones */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center center; /* Center the image */
+        background-repeat: no-repeat;
+    }
+
+    .titulo-caja {
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left; /* Center the text */
+        width: 90%; /* Ensure it fits within the viewport */
+    }
+
+    #titulo {
+        font-size: 24pt; /* Adjust font size for mobile */
+        padding-bottom: 50px; /* Adjust padding for mobile */
+    }
+
+    #subtitulo {
+        font-size: 18pt; /* Adjust font size for mobile */
+        padding-top: 40px; /* Adjust padding for mobile */
+        min-width: unset; /* Allow text to wrap on smaller screens */
+        line-height: 24pt; /* Adjust line height for mobile */
+        overflow-wrap: break-word; /* Prevent horizontal overflow */
+    }
+
+    /* Resize #manuscrito1-4 for mobile */
+    #manuscrito1 {
+        width: 80%; /* Resize width for mobile */
+        top: 30%; /* Center vertically */
+        left: 52%; /* Center horizontally */
+        transform: translate(-50%, -50%);
+    }
+
+    #manuscrito2 {
+        width: 80%; /* Resize width for mobile */
+        top: 30%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%);
+    }
+
+    #manuscrito3 {
+        width: 80%; /* Resize width for mobile */
+        top: 30%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%);
+    }
+
+    #manuscrito4 {
+        width: 80%; /* Resize width for mobile */
+        top: 30%; /* Center vertically */
+        left: 48%; /* Center horizontally */
+        transform: translate(-50%, -50%);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center; /* Center the footer text */
+        background: none; /* Ensure the background is transparent */
+        color: white; /* Set footer text color to white */
+    }
 }
